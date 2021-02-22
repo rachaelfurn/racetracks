@@ -302,14 +302,16 @@ hr {
   border-top: 0.2rem solid #fefefe;
   }
    
-
+a {
+  color: #222;
+  padding: 0.1rem;
+}
 
 #tracks li {
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
 }
 
-a {
-  color: #222;
+#tracks li a {
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
 }
 
