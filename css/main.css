@@ -320,3 +320,7 @@ a:hover {
   color: #b6fbff;
   text-decoration: none;
 }
+
+#wcb {
+  text-align: left !important;
+}
