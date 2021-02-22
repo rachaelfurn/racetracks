@@ -169,15 +169,42 @@ textarea {
   clear: both;
 }
 
+#tracks {
+  display: grid;
+  grid-template-columns: 100%;
+  }
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 700px) {
+  #tracks {
+    grid-template-columns: 50% 50%;
+    }
+  }   
+
+@media only screen and (min-width: 1000px) {
+  #tracks {
+    grid-template-columns: 33% 33% 34%;
+    }
+  }
+
+@media only screen and (min-width: 1300px) {
+  #tracks {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
 }
+
+
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -262,11 +289,32 @@ textarea {
 }
 
 body {
-  background: #acb6e5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #83a4d4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.5em;
   color: #222;
   padding: 3rem;
+  }
+
+hr {
+  border-top: 0.2rem solid #fefefe;
+  }
+   
+
+
+#tracks li {
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+
+a {
+  color: #222;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+
+a:hover {
+  background: #222;
+  color: #b6fbff;
+  text-decoration: none;
 }
